@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Github Blog Setup</title>
+  <meta name="author" content="chtangwin">
+
+  <link href="http://chtangwin.github.io//atom.xml" type="application/atom+xml" rel="alternate"
+        title="chtangwin Atom Feed" />
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="../../../../../favicon.png" rel="icon">
+  <link href="../../../../../theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+  <script src="../../../../../theme/js/modernizr-2.0.js"></script>
+  <script src="../../../../../theme/js/ender.js"></script>
+  <script src="../../../../../theme/js/octopress.js" type="text/javascript"></script>
+
+  <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="../../../../../">chtangwin</a></h1>
+    <h2>Dive into Stats/FinMath</h2>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://chtangwin.github.io//atom.xml" rel="subscribe-atom">Atom</a></li>
+</ul>
+
+
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:../../../../.." />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+
+<ul class="main-navigation">
+    <li><a href="http://chtangwin.github.io/chtangwin">Blog</a></li>
+    <li><a href="http://chtangwin.github.io/chtangwin/archives.html">Archives</a></li>
+    <li><a href="http://chtangwin.github.io/homepage">About</a></li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">Github Blog Setup</h1>
+      <p class="meta"><time datetime="2014-11-20T22:09:00-05:00" pubdate>Nov 20, 2014</time></p>
+</header>
+
+  <div class="entry-content"><p>Now I have decided to use github + pelican for personal blog. The plan is to 
+integrate with ipython notebook so all the math and stats notes can be displayed 
+easily. </p>
+<h2>Setup Steps</h2>
+<ol>
+<li>
+<p>Follow the instructions from <a href="http://ntanjerome.org/blog/how-to-setup-github-user-page-with-pelican/">How to setup Github User Page with Pelican</a>, up to
+the point where first post is done and local devserver is up. The only difference
+is that I am using main branch ("master") for all edits. The other <strong>very good</strong> references are:</p>
+<ul>
+<li>
+<p><a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html">Migrating to GitHub Pages using Pelican</a></p>
+</li>
+<li>
+<p><a href="http://chdoig.github.io/create-pelican-blog.html">Createing your blog with Pelican</a></p>
+</li>
+</ul>
+<p>In fact, they use pretty themes. I plan to read through carefully later
+and see if can use some of their settings.</p>
+</li>
+<li>
+<p>For now, use the same theme as in <a href="http://nbviewer.ipython.org/url/ocefpaf.github.com/python4oceanographers/downloads/notebooks/2013-12-23-blogging.ipynb">python4oceanographers</a>, mainly download <em>theme</em> and <em>plugin</em> from github, then edit <em>pelicanconf.py</em> and <em>publishconf.py</em> scripts.</p>
+<div class="highlight"><pre><span class="nv">$ </span>git clone https://github.com/jakevdp/pelican-octopress-theme.git
+<span class="nv">$ </span>git clone https://github.com/getpelican/pelican-plugins.git
+</pre></div>
+
+
+</li>
+<li>
+<p>Write markdown files in <code>conten</code> folder, then run <code>make devserver</code> to generate HTML 
+for the site, and serves is up locally at <a href="http://localhost:8000">http://localhost:8000</a>.
+Note that <code>make devserver</code> will also automatically regenerate the whole site, i.e. run <code>pelican</code> on <code>content</code> every time one save a change to a content, configuration, or theme file. Just refresh the page in your browser, and you should immediately see the changes. To shutdown the webserver, use <code>make stopserver</code>.</p>
+</li>
+<li>
+<p>Now we have two repos, one is for <code>blog-source</code>, the other is actual site under <code>output</code> directory. See <a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html">Posting to GitHub</a> 
+for how to publish to username.github.io site. In short summary, use the following commands:</p>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>blog
+<span class="nv">$ </span>pelican content   <span class="c"># or &quot;make html&quot;</span>
+<span class="nv">$ </span><span class="nb">cd </span>output
+<span class="nv">$ </span>git add --all
+<span class="nv">$ </span>git commit -m <span class="s2">&quot;commit message&quot;</span>
+<span class="nv">$ </span>git push origin master
+</pre></div>
+
+
+</li>
+<li>
+<p>The disadvantage of previous step is that two checkins are needed for update, one
+for <code>blog-source</code>, the other for actual site. One can use <em>git hooks</em> to push changes
+to both repos at the same time, as shown 
+<a href="http://mavant.com/blog/2014/03/10/pelican-git-hooks-github-dot-io/">here</a>.
+Now one can do the following:</p>
+<div class="highlight"><pre><span class="nv">$ </span>vim content/your-message.md
+<span class="nv">$ </span>git commit -am <span class="s2">&quot;commit message&quot;</span>
+<span class="nv">$ </span>git push origin master
+</pre></div>
+
+
+</li>
+</ol>
+<h2>Workflow</h2>
+<p>I use <code>conda</code> to manage virtualenv. the normal workflow is going to like below:</p>
+<div class="highlight"><pre><span class="nv">$ </span>activate myblog
+<span class="nv">$ </span>vim content/blog-post-file.md  <span class="c"># add/edit entries</span>
+<span class="nv">$ </span>... <span class="c"># test locally till all is good</span>
+<span class="nv">$ </span>git commit -am <span class="s2">&quot;commit message&quot;</span>
+<span class="nv">$ </span>git push origin master
+<span class="nv">$ </span>deactie myblog <span class="c"># or just exit once all done</span>
+</pre></div>
+
+
+<p>As to ipython notebook integration and how to use markdown, the blog post from Jake
+<a href="https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/">Migrating from Octopress to Pelican</a>
+gives very detailed instructions. Check it out.</p>
+<h2>Resources</h2>
+<ol>
+<li><a href="http://chdoig.github.io/create-pelican-blog.html">Creating your blog with Pelican</a></li>
+<li><a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html">Migrating to GitHub Pages using Pelican</a></li>
+</ol>
+<h2>TODO</h2>
+<ul>
+<li>disqus setup</li>
+<li>ipython notebook integration</li>
+<li>update .bashrc for deactive() call</li>
+<li>starting writing real contents</li>
+</ul></div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">chtangwin</span>
+  </span>
+<time datetime="2014-11-20T22:09:00-05:00" pubdate>Nov 20, 2014</time>  <span class="categories">
+    <a class="category" href="../../../../../tag/blog.html">blog</a>
+    <a class="category" href="../../../../../tag/python.html">python</a>
+  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
+</div>
+<aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="../../../../../blog/2014/11/20/github-blog-setup/">Github Blog Setup</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+        <li><a href="../../../../../category/python.html">Python</a></li>
+    </ul>
+  </section>
+ 
+
+  <section>
+  <h1>Tags</h1>
+    <a href="../../../../../tag/blog.html">blog</a>,    <a href="../../../../../tag/python.html">python</a>  </section>
+
+
+    <section>
+        <h1>Blogroll</h1>
+        <ul>
+            <li><a href="http://getpelican.com/" target="_blank">Pelican</a></li>
+            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+            <li><a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a></li>
+            <li><a href="#" target="_blank">You can modify those links in your config file</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - chtangwin -
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+	<script type="text/javascript">
+	  var disqus_shortname = 'chtangwin';
+          var disqus_identifier = '/blog/2014/11/20/github-blog-setup/';
+          var disqus_url = '../../../../../blog/2014/11/20/github-blog-setup/';
+          var disqus_title = 'Github Blog Setup';
+	  (function() {
+	    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+	    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	   })();
+	</script>
+</body>
+</html>
