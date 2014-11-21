@@ -121,19 +121,19 @@ Now one can do the following:</p>
 </li>
 </ol>
 <h2>Workflow</h2>
-<p>I use <code>conda</code> to manage virtualenv. the normal workflow is going to like below:</p>
+<p>I use <code>conda</code> to manage virtualenv. The normal workflow is going to be like below:</p>
 <div class="highlight"><pre><span class="nv">$ </span>activate myblog
 <span class="nv">$ </span>vim content/blog-post-file.md  <span class="c"># add/edit entries</span>
 <span class="nv">$ </span>... <span class="c"># test locally till all is good</span>
 <span class="nv">$ </span>git commit -am <span class="s2">&quot;commit message&quot;</span>
 <span class="nv">$ </span>git push origin master
-<span class="nv">$ </span>deactie myblog <span class="c"># or just exit once all done</span>
+<span class="nv">$ </span>deactivate myblog <span class="c"># or just exit once all done</span>
 </pre></div>
 
 
 <p>As to ipython notebook integration and how to use markdown, the blog post from Jake
 <a href="https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/">Migrating from Octopress to Pelican</a>
-gives very detailed instructions. Check it out.</p>
+gives very detailed instructions. Check it out. </p>
 <h2>Resources</h2>
 <ol>
 <li><a href="http://chdoig.github.io/create-pelican-blog.html">Creating your blog with Pelican</a></li>
