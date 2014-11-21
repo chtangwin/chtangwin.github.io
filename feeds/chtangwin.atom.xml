@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>chtangwin</title><link href="/" rel="alternate"></link><link href="http://chtangwin.github.io//feeds%5Cchtangwin.atom.xml" rel="self"></link><id>/</id><updated>2014-11-20T22:09:00-05:00</updated><entry><title>github blog setup</title><link href="/blog/2014/11/20/blog/" rel="alternate"></link><updated>2014-11-20T22:09:00-05:00</updated><author><name>chtangwin</name></author><id>tag:,2014-11-20:blog/2014/11/20/blog/</id><summary type="html">&lt;p&gt;Now I have decided to use github + pelican for personal blog. The plan is to integrate with
+ipython notebook so all my math/stats notes can be displayed easily. &lt;/p&gt;
+&lt;h2&gt;Steps to Setup&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Follow the instructions from &lt;a href="http://ntanjerome.org/blog/how-to-setup-github-user-page-with-pelican/"&gt;How to setup Github User Page with Pelican&lt;/a&gt;, up to the point where first post is done and local devserver is up. The only difference is I am using main branch ("master") for all edits.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The first theme to use is from &lt;a href="http://nbviewer.ipython.org/url/ocefpaf.github.com/python4oceanographers/downloads/notebooks/2013-12-23-blogging.ipynb"&gt;python4oceanographers&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Workflow&lt;/h2&gt;
+&lt;p&gt;Once the basic setup is completed, use the following steps to add blog posts.
+1. activate myblog
+2. add new entries in "content/", including ipython notebooks, images, code, etc.
+3. test locally
+4. pushlish
+5. deactivate myblog&lt;/p&gt;
+&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://chdoig.github.io/create-pelican-blog.html"&gt;Creating your blog with Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html"&gt;Migrating to GitHub Pages using Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;TODO&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;update .bashrc for activate/deactive myblog&lt;/li&gt;
+&lt;li&gt;Theme, find beautiful one&lt;/li&gt;
+&lt;li&gt;ipython notebook integration&lt;/li&gt;
+&lt;li&gt;Starting writing real contents&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="blog"></category><category term="python"></category></entry></feed>
