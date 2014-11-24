@@ -5,27 +5,39 @@
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;The following resources are useful.&lt;/p&gt;
+&lt;h1 id="Bayesian-Analysis-Learning-Notes"&gt;Bayesian Analysis Learning Notes&lt;a class="anchor-link" href="#Bayesian-Analysis-Learning-Notes"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;The following resources are useful for learning Bayesian analysis.&lt;/p&gt;
 &lt;h2 id="books"&gt;Books&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Probabilistic Programming &amp;amp; Bayesian Methods for Hackers&lt;/li&gt;
-&lt;li&gt;Doing Bayesian Analysis by J. Kruschke&lt;/li&gt;
-&lt;li&gt;Bayesian Data Analysis by A. Gelman&lt;/li&gt;
-&lt;li&gt;Applied Bayesian Modelling&lt;/li&gt;
+&lt;li&gt;Probabilistic Programming &amp;amp; Bayesian Methods for Hackers, by camdp&lt;/li&gt;
+&lt;li&gt;Doing Bayesian Data Analysis, 2nd ed, by J. Kruschke&lt;/li&gt;
+&lt;li&gt;Bayesian Data Analysis, by Gelman, Carlin, Stern, Dunson, Vehtari, and Rubin (1995, 2003, 2013) &lt;/li&gt;
+&lt;li&gt;Handbook of Markov Chain Monte Carlo, edited by Brooks, Gelman, Jones, and Meng (2011) &lt;/li&gt;
+&lt;li&gt;Data Analysis Using Regression and Multilevel/Hierarchical Models, by Gelman and Hill (2007) &lt;/li&gt;
+&lt;li&gt;Applied Bayesian Modelling, 2nd ed, by Congdon.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="software"&gt;Software&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;pyMC&lt;pre&gt;&lt;code&gt;  ==&amp;gt; github https://github.com/aloctavodia/Doing_bayesian_data_analysis
-  ==&amp;gt; BEST:  https://github.com/strawlab/best
-  ==&amp;gt; The time has come: Bayesian methods for data analysis in the organizational sciences
+&lt;li&gt;pyMC&lt;pre&gt;&lt;code&gt;==&amp;gt; github https://github.com/aloctavodia/Doing_bayesian_data_analysis
+==&amp;gt; BEST:  https://github.com/strawlab/best
+==&amp;gt; The time has come: Bayesian methods for data analysis in the organizational sciences
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;emcee&lt;/li&gt;
-&lt;li&gt;Infer.NET&lt;pre&gt;&lt;code&gt;  ==&amp;gt; Microsoft TrueSkill
+&lt;li&gt;Infer.NET&lt;pre&gt;&lt;code&gt;==&amp;gt; Microsoft TrueSkill
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="learning"&gt;Learning&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;CHRISTOPHER FONNESBECK SciPy 2014 Tutorial, Video 1,2,3&lt;pre&gt;&lt;code&gt;  ==&amp;gt; github https://github.com/fonnesbeck/scipy2014_tutorial
+&lt;li&gt;Chris Fonnesbeck: SciPy 2014 Tutorial, Video 1,2,3&lt;pre&gt;&lt;code&gt;==&amp;gt; github https://github.com/fonnesbeck/scipy2014_tutorial
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://faculty.chicagobooth.edu/nicholas.polson/teaching/41000/index.html"&gt;Business 41000&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro/"&gt;Frequentism and Bayesianism: A Practical Introduction&lt;/a&gt; 4 part series&lt;/li&gt;
@@ -33,8 +45,8 @@
 &lt;/ul&gt;
 &lt;h2 id="research"&gt;Research&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Nicholas Polson&lt;/strong&gt;&lt;pre&gt;&lt;code&gt;    http://faculty.chicagobooth.edu/nicholas.polson/research/papers.html
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Nicholas Polson&lt;/strong&gt;&amp;#39;s &lt;a href="http://faculty.chicagobooth.edu/nicholas.polson/research/papers.html"&gt;research papers&lt;/a&gt; on finance/economics.&lt;/li&gt;
+&lt;li&gt;automatic graphical model construction (structural inference over dynamic Bayesian networks)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="blogs-"&gt;Blogs:&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;* http://doingbayesiandataanalysis.blogspot.com
@@ -46,34 +58,9 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id="machine-learning"&gt;Machine Learning&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;* http://hunch.net
 * http://fastML.com
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
-&lt;p&gt;automatic graphical model construction (structural inference over dynamic Bayesian networks)&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;
-In&amp;nbsp;[]:
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
 &lt;/div&gt;&lt;/p&gt;</summary><category term="Bayesian"></category></entry><entry><title>GitHub Blog Setup</title><link href="https://chtangwin.github.io/blog/2014/11/20/github-blog-setup/" rel="alternate"></link><updated>2014-11-20T22:09:00-05:00</updated><author><name>chtangwin</name></author><id>tag:chtangwin.github.io,2014-11-20:blog/2014/11/20/github-blog-setup/</id><summary type="html">&lt;p&gt;Now I have decided to use github + pelican for personal blog. The plan is to 
 integrate with ipython notebook so all the math and stats notes can be displayed 
 easily. &lt;/p&gt;
