@@ -1,5 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>chtangwin</title><link>https://chtangwin.github.io/</link><description>Dive into Stats/FinMath</description><atom:link href="http://chtangwin.github.io//feeds%5Cchtangwin.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 20 Nov 2014 22:09:00 -0500</lastBuildDate><item><title>Github Blog Setup</title><link>https://chtangwin.github.io/blog/2014/11/20/github-blog-setup/</link><description>&lt;p&gt;Now I have decided to use github + pelican for personal blog. The plan is to 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>chtangwin</title><link>https://chtangwin.github.io/</link><description>Dive into Stats/FinMath</description><atom:link href="http://chtangwin.github.io//feeds%5Cchtangwin.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 21 Nov 2014 22:00:00 -0500</lastBuildDate><item><title>Bayesian Data Analysis Study Notes</title><link>https://chtangwin.github.io/blog/2014/11/21/bayesian-study-notes/</link><description>&lt;p&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;The following resources are useful.&lt;/p&gt;
+&lt;h2 id="books"&gt;Books&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Probabilistic Programming &amp;amp; Bayesian Methods for Hackers&lt;/li&gt;
+&lt;li&gt;Doing Bayesian Analysis by J. Kruschke&lt;/li&gt;
+&lt;li&gt;Bayesian Data Analysis by A. Gelman&lt;/li&gt;
+&lt;li&gt;Applied Bayesian Modelling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="software"&gt;Software&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;pyMC&lt;pre&gt;&lt;code&gt;  ==&amp;gt; github https://github.com/aloctavodia/Doing_bayesian_data_analysis
+  ==&amp;gt; BEST:  https://github.com/strawlab/best
+  ==&amp;gt; The time has come: Bayesian methods for data analysis in the organizational sciences
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;emcee&lt;/li&gt;
+&lt;li&gt;Infer.NET&lt;pre&gt;&lt;code&gt;  ==&amp;gt; Microsoft TrueSkill
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="learning"&gt;Learning&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;CHRISTOPHER FONNESBECK SciPy 2014 Tutorial, Video 1,2,3&lt;pre&gt;&lt;code&gt;  ==&amp;gt; github https://github.com/fonnesbeck/scipy2014_tutorial
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://faculty.chicagobooth.edu/nicholas.polson/teaching/41000/index.html"&gt;Business 41000&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro/"&gt;Frequentism and Bayesianism: A Practical Introduction&lt;/a&gt; 4 part series&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.sumsar.net/best_online/"&gt;Bayesian Estimation Supersedes the t-test (BEST) - online&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="research"&gt;Research&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Nicholas Polson&lt;/strong&gt;&lt;pre&gt;&lt;code&gt;    http://faculty.chicagobooth.edu/nicholas.polson/research/papers.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="blogs-"&gt;Blogs:&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;* http://doingbayesiandataanalysis.blogspot.com
+* https://jakevdp.github.io/
+* https://twiecki.github.io/
+* http://camdp.com/blogs/
+* http://probablisticprogramming.net
+* http://healthyalgorithms.com/
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="machine-learning"&gt;Machine Learning&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;* http://hunch.net
+* http://fastML.com
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
+&lt;p&gt;automatic graphical model construction (structural inference over dynamic Bayesian networks)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="a-first-level-header"&gt;A First Level Header&lt;/h1&gt;
+&lt;h2 id="a-second-level-header"&gt;A Second Level Header&lt;/h2&gt;
+&lt;p&gt;Now is the time for all good men to come to
+the aid of their country. This is just a
+regular paragraph.&lt;/p&gt;
+&lt;p&gt;The quick brown fox jumped over the lazy
+dog&amp;#39;s back.&lt;/p&gt;
+&lt;h3 id="header-3"&gt;Header 3&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote.&lt;/p&gt;
+&lt;p&gt;This is the second paragraph in the blockquote.&lt;/p&gt;
+&lt;h2 id="this-is-an-h2-in-a-blockquote"&gt;This is an H2 in a blockquote&lt;/h2&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Some of these words &lt;em&gt;are emphasized&lt;/em&gt;.
+Some of these words &lt;em&gt;are emphasized also&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Use two asterisks for &lt;strong&gt;strong emphasis&lt;/strong&gt;.
+Or, if you prefer, &lt;strong&gt;use two underscores instead&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;This is an &lt;a href="http://example.com/" title="With a Title"&gt;example link&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;I get 10 times more traffic from &lt;a href="http://google.com/" title="Google"&gt;Google&lt;/a&gt; than from
+&lt;a href="http://search.yahoo.com/" title="Yahoo Search"&gt;Yahoo&lt;/a&gt; or &lt;a href="http://search.msn.com/" title="MSN Search"&gt;MSN&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;I start my morning with a cup of coffee and
+&lt;a href="http://www.nytimes.com/"&gt;The New York Times&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;I strongly recommend against using any &lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
+&lt;p&gt;I wish SmartyPants used named entities like &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;
+instead of decimal-encoded entites like &lt;code&gt;&amp;amp;#8212;&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">chtangwin</dc:creator><pubDate>Fri, 21 Nov 2014 22:00:00 -0500</pubDate><guid>tag:chtangwin.github.io,2014-11-21:blog/2014/11/21/bayesian-study-notes/</guid><category>Bayesian</category></item><item><title>GitHub Blog Setup</title><link>https://chtangwin.github.io/blog/2014/11/20/github-blog-setup/</link><description>&lt;p&gt;Now I have decided to use github + pelican for personal blog. The plan is to 
 integrate with ipython notebook so all the math and stats notes can be displayed 
 easily. &lt;/p&gt;
 &lt;h2&gt;Setup Steps&lt;/h2&gt;
@@ -9,12 +140,8 @@ easily. &lt;/p&gt;
 the point where first post is done and local devserver is up. The only difference
 is that I am using main branch ("master") for all edits. The other &lt;strong&gt;very good&lt;/strong&gt; references are:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html"&gt;Migrating to GitHub Pages using Pelican&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://chdoig.github.io/create-pelican-blog.html"&gt;Createing your blog with Pelican&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html"&gt;Migrating to GitHub Pages using Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://chdoig.github.io/create-pelican-blog.html"&gt;Creating your blog with Pelican&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In fact, they use pretty themes. I plan to read through carefully later
 and see if can use some of their settings.&lt;/p&gt;
@@ -36,7 +163,7 @@ Note that &lt;code&gt;make devserver&lt;/code&gt; will also automatically regene
 &lt;p&gt;Now we have two repos, one is for &lt;code&gt;blog-source&lt;/code&gt;, the other is actual site under &lt;code&gt;output&lt;/code&gt; directory. See &lt;a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html"&gt;Posting to GitHub&lt;/a&gt; 
 for how to publish to username.github.io site. In short summary, use the following commands:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;blog
-&lt;span class="nv"&gt;$ &lt;/span&gt;pelican content   &lt;span class="c"&gt;# or &amp;quot;make html&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;make publish &lt;span class="c"&gt;# or &amp;quot;pelican content&amp;quot;&lt;/span&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;output
 &lt;span class="nv"&gt;$ &lt;/span&gt;git add --all
 &lt;span class="nv"&gt;$ &lt;/span&gt;git commit -m &lt;span class="s2"&gt;&amp;quot;commit message&amp;quot;&lt;/span&gt;
@@ -77,11 +204,12 @@ gives very detailed instructions. Check it out. &lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href="http://chdoig.github.io/create-pelican-blog.html"&gt;Creating your blog with Pelican&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html"&gt;Migrating to GitHub Pages using Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/"&gt;Migrating from Octopress to Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A great reference for &lt;a href="http://futurile.net/resources/blogging/pelican.html"&gt;Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Daring Fireball site's full documentation for &lt;a href="http://daringfireball.net/projects/markdown/syntax"&gt;Markdown&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2&gt;TODO&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;disqus setup&lt;/li&gt;
-&lt;li&gt;ipython notebook integration&lt;/li&gt;
-&lt;li&gt;update .bashrc for deactive() call&lt;/li&gt;
-&lt;li&gt;starting writing real contents&lt;/li&gt;
+&lt;li&gt;update .bashrc for deactivate() call&lt;/li&gt;
+&lt;li&gt;start writing real contents&lt;/li&gt;
 &lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">chtangwin</dc:creator><pubDate>Thu, 20 Nov 2014 22:09:00 -0500</pubDate><guid>tag:chtangwin.github.io,2014-11-20:blog/2014/11/20/github-blog-setup/</guid><category>blog</category><category>python</category></item></channel></rss>
