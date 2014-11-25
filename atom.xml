@@ -141,7 +141,7 @@ from Jake gives very detailed instructions. Check it out. &lt;/p&gt;
 &lt;/ol&gt;
 &lt;h2&gt;TODO&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;update .bashrc for deactivate() call&lt;/li&gt;
+&lt;li&gt;fix 'git push' issue on mobaterm&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Update&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;11-24-2014:&lt;/em&gt; It turns out Pelican only monitors &lt;em&gt;'md'&lt;/em&gt; files in content folder, so any changes to &lt;em&gt;'ipynb'&lt;/em&gt;
