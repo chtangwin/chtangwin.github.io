@@ -139,12 +139,8 @@ from Jake gives very detailed instructions. Check it out. &lt;/p&gt;
 &lt;li&gt;A great reference for &lt;a href="http://futurile.net/resources/blogging/pelican.html"&gt;Pelican&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Daring Fireball site's full documentation for &lt;a href="http://daringfireball.net/projects/markdown/syntax"&gt;Markdown&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;TODO&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;fix 'git push' issue on mobaterm&lt;/li&gt;
-&lt;/ul&gt;
 &lt;h3&gt;Update&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;11-24-2014:&lt;/em&gt; It turns out Pelican only monitors &lt;em&gt;'md'&lt;/em&gt; files in content folder, so any changes to &lt;em&gt;'ipynb'&lt;/em&gt;
+&lt;p&gt;&lt;em&gt;11-24-2014:&lt;/em&gt; It turns out Pelican only monitors &lt;em&gt;'.md'&lt;/em&gt; files in content folder, so any changes to &lt;em&gt;'.ipynb'&lt;/em&gt;
 would not trigger regeneration of html. One need to edit &lt;code&gt;pelicanconf.py&lt;/code&gt; to disable cache:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;LOAD_CONTENT_CACHE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; False
 &lt;/pre&gt;&lt;/div&gt;

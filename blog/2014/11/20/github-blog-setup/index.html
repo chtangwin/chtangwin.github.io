@@ -1839,12 +1839,8 @@ from Jake gives very detailed instructions. Check it out. </p>
 <li>A great reference for <a href="http://futurile.net/resources/blogging/pelican.html">Pelican</a></li>
 <li>Daring Fireball site's full documentation for <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a></li>
 </ol>
-<h2>TODO</h2>
-<ul>
-<li>fix 'git push' issue on mobaterm</li>
-</ul>
 <h3>Update</h3>
-<p><em>11-24-2014:</em> It turns out Pelican only monitors <em>'md'</em> files in content folder, so any changes to <em>'ipynb'</em>
+<p><em>11-24-2014:</em> It turns out Pelican only monitors <em>'.md'</em> files in content folder, so any changes to <em>'.ipynb'</em>
 would not trigger regeneration of html. One need to edit <code>pelicanconf.py</code> to disable cache:</p>
 <div class="highlight"><pre><span class="nv">LOAD_CONTENT_CACHE</span> <span class="o">=</span> False
 </pre></div>
